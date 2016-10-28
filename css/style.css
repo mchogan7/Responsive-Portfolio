@@ -7,16 +7,15 @@ html {
 
 .MyLogo {
 	background-color: #4aaaa5; 
-	flex-grow: 1;
 	height: 80px;
 	display: flex;
 	text-align: center;
 	justify-content: center;
-	flex-direction: column;
 	color: white;
 	font-size: 25px;
 	margin-left: 7px;
 	float: left;
+	line-height: 80px;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-weight: bold;
 	padding-left: 20px;
@@ -81,33 +80,6 @@ a {
 	height: 50px;
 }
 
-@media (max-width: 828px) {
-  .mainContainer {
-    flex: 1;
-  }
-
-  .connectContainer{
-  	width: 100%;
-  }
-
-  .nav{
-  	display:none !important;
-  }
-
-  .mobileNav {
-  	display:flex;
-  }
-
-  .myLogo{
-  	 width: 100% !important;
-  }
-
-  .portfolioItem {
-  	max-width: 100% !important;
-  	margin-right: 0px;
-  }
-
-}
 
 main {
 	padding-left: 5vw;
@@ -164,7 +136,7 @@ main {
 	flex-flow: wrap;
 	margin-left: 7px;
 	margin-right: 7px;
-	margin-bottom: 60px;
+	margin-bottom: 15px;
 }
 
 
@@ -280,7 +252,7 @@ button{
 	padding: 15px;
 	padding-bottom: 0px;
 	flex: 7 0 400px;
-	margin-bottom: 60px;
+	margin-bottom: 15px;
 	margin-left: 7px;
 	margin-right: 7px;
 	justify-content: space-between;
@@ -291,4 +263,73 @@ button{
 
 	.menu:hover {
 		color: #4aaaa5;
+	}
+
+	@media screen and (max-width: 980px) {
+
+		.myImage {
+		display: block;
+		float: none;
+		width: 100%;
+		}
+
+		.portfolioItem{
+			max-width: 100%;
+			display: block;
+			margin-right: 0;
+		}
+	}
+
+		@media screen and (max-width: 768px) {
+		
+		.myImage{
+		float: left;
+		width: 40%;
+		}
+
+		.connectContainer{
+
+		}
+		
+		.portfolioItem{
+			max-width: 47%;
+			display: inline-block;
+		}
+	}
+
+		@media screen and (max-width: 640px) {
+		
+		.myImage {
+			float: none;
+			width: 100%;
+			margin-bottom: 15px;
+		}
+
+		.nav {
+			display: none;
+		}
+
+		.mobileNav{
+			display: flex;
+		}
+
+		.MyLogo {
+			display: inline-block;
+			width: 100%;
+			float: none;
+			margin: 0;
+			padding: 0;
+
+		}
+		
+		.header {
+			display: block;
+			padding-left: 0;
+		}
+
+		.portfolioItem {
+			max-width: 100%;
+			display: block;
+			margin-right: 0;
+		}
 	}
