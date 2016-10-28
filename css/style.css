@@ -1,0 +1,294 @@
+html {
+	background-image: url("../images/background.png");
+	background-repeat: repeat;
+	overflow-x:hidden;
+	margin-bottom: 60px;
+}
+
+.MyLogo {
+	background-color: #4aaaa5; 
+	flex-grow: 1;
+	height: 80px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+	color: white;
+	font-size: 25px;
+	margin-left: 7px;
+	float: left;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-weight: bold;
+	padding-left: 20px;
+	padding-right: 20px;
+
+
+}
+
+a {
+		text-decoration: none;
+}
+
+.header {
+	display: flex;
+	width: 100%;
+	height: 80px;
+	border-style: solid;
+	border-bottom-width: 1px;
+	border-color: #dddddd;
+	background-color: white;
+	justify-content: space-between;
+	padding-left: 5vw;
+
+}
+
+.nav {
+	height: 15vh;
+	float:right;
+	width: 300px;
+	text-align: center;
+	right: 5vw;
+	position: relative;
+	padding-right: 40px;
+
+
+	}
+
+.menu {
+	padding: 0 5% 0 5%;
+	line-height: 80px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+}
+
+.mainContainer{
+
+	background-color: white;
+	padding: 15px;
+	display: inline-block;
+	flex: 7 0 400px;
+	height: auto;
+	margin-bottom: 15px;
+	margin-left: 7px;
+	margin-right: 7px;
+}
+
+.mobileNav {
+	display: none;
+	background-color: white;
+	align-items: center;
+	justify-content: space-around;
+	height: 50px;
+}
+
+@media (max-width: 828px) {
+  .mainContainer {
+    flex: 1;
+  }
+
+  .connectContainer{
+  	width: 100%;
+  }
+
+  .nav{
+  	display:none !important;
+  }
+
+  .mobileNav {
+  	display:flex;
+  }
+
+  .myLogo{
+  	 width: 100% !important;
+  }
+
+  .portfolioItem {
+  	max-width: 100% !important;
+  	margin-right: 0px;
+  }
+
+}
+
+main {
+	padding-left: 5vw;
+	padding-right: 5vw;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	display: flex;
+	flex-flow: row wrap;
+	min-height: 100%;
+}
+
+.heading {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #4aaaa5;
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+.myImage {
+	height: auto;
+	margin-right: 15px;
+	width: 30%;
+	min-width: 150px;
+	float: left;
+
+}
+
+.mainText {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+	line-height: 150%;
+	font-size: 15px;
+}
+
+.divider {
+	border-style: solid;
+	border-bottom-width: 1px;
+	border-color: #dddddd;
+	margin-bottom: 25px;
+}
+
+.connectContainer {
+	display: flex;
+	background-color: white;
+	padding: 15px;
+	text-align: center;
+	flex-grow: 1;
+	height: 80px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-flow: wrap;
+	margin-left: 7px;
+	margin-right: 7px;
+	margin-bottom: 60px;
+}
+
+
+
+
+
+.icons {
+	height: 40px;
+}
+
+.connectHeading {
+		
+		font-family: 'Georgia', Times, Times New Roman, serif;
+		color: #4aaaa5;
+		font-weight: bold;
+		width: 100%;
+		border-style: solid;
+		border-bottom-width: 1px;
+		border-color: #dddddd;
+		margin-bottom: 10px;
+		line-height: 30px;
+
+}
+
+.footer {
+	background-color: #666666;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	color: white;
+	height: 60px;
+  	line-height: 60px;
+  	text-align: center;
+  	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  	font-size: 12px;
+  	border-top: 3px;
+	border-color: #4aaaa5;
+	border-style: solid;
+
+}
+
+.formHeading {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+	line-height: 30px;
+}
+
+input {
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: 1px solid;
+	border-color: #dddddd;
+	color: #dddddd;
+	margin-bottom: 15px;
+}
+
+textarea{
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: 1px solid;
+	border-color: #dddddd;
+	color: #dddddd;
+	height: 150px;
+}
+
+button{
+		font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+		background-color: #4aaaa5;
+		color: white;
+		width: 80px;
+		height: 30px;
+		border: none;
+		margin-top: 15px;
+}
+
+.portfolioItem img{
+	display: flex;
+	position: relative;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.portfolioItem {
+	display: inline-block;
+	max-width: 47%;
+	position:relative;
+	flex: 1 1 
+	flex: 0 0 50px;
+	margin-right: 10px;
+	margin-bottom: 15px;
+}
+
+
+
+.portTitle{
+	position: absolute;
+	left: 0; top: 75%; right: 0; bottom: 0;
+	background-color: #4aaaa5;
+	color: white;
+	height: 40px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	text-align: center;
+	line-height: 40px;
+
+	float:left;
+}
+
+.portContainer{
+	display: inline-block;
+	background-color: white;
+	padding: 15px;
+	padding-bottom: 0px;
+	flex: 7 0 400px;
+	margin-bottom: 60px;
+	margin-left: 7px;
+	margin-right: 7px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-direction: row;
+	flex-flow: wrap;
+	}
+
+	.menu:hover {
+		color: #4aaaa5;
+	}
